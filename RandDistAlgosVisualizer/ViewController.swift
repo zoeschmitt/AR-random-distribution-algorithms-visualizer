@@ -64,11 +64,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @objc func didTapScreen(recognizer: UITapGestureRecognizer) {
         if didInitializeScene {
             if let camera = sceneView.session.currentFrame?.camera {
+                let tapLocation = recognizer.location(in: sceneView)
+                let hitTestResults = sceneView.hitTest(tapLocation)
                 var translation = matrix_identity_float4x4
-                translation.columns.3.z = -1.0
+                translation.columns.3.z = -0.2
                 let transform = camera.transform * translation
                 let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
-                sceneController.addDoughnut(position: position)
+                sceneController.createPointField(position: position)
             }
         }
     }

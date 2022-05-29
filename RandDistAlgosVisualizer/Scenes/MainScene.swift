@@ -42,17 +42,12 @@ struct MainScene {
         scene.rootNode.addChildNode(directionalNode)
     }
 
-    func addDoughnut(position: SCNVector3) {
+    func createPointField(position: SCNVector3) {
+        var randomGenerator = RandomPointGenerator()
+        let points = randomGenerator.generatePoints(numPoints: 130, maxWidth: 4.0, maxLength: 4.0)
 
-        guard let scene = self.scene else { return }
-
-        let containerNode = SCNNode()
-
-        let nodesInFile = SCNNode.allNodes(from: "sphere.dae")
-        nodesInFile.forEach { (node) in
-            containerNode.addChildNode(node)
-        }
-        containerNode.position = position
-        scene.rootNode.addChildNode(containerNode)
+        let visualizer = Visualizer(with: points)
+        scene?.rootNode.addChildNode(visualizer)
+        visualizer.position = position
     }
 }
