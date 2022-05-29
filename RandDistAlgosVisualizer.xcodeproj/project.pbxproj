@@ -47,6 +47,7 @@
 		DDF024FE284429C300C4F49D = {
 			isa = PBXGroup;
 			children = (
+				DDF0252728442B5F00C4F49D /* README.md */,
 				DDF02509284429C300C4F49D /* RandDistAlgosVisualizer */,
 				DDF02508284429C300C4F49D /* Products */,
 			);
@@ -73,7 +74,6 @@
 				DDF02510284429C300C4F49D /* Main.storyboard */,
 				DDF02513284429C400C4F49D /* Assets.xcassets */,
 				DDF02515284429C400C4F49D /* LaunchScreen.storyboard */,
-				DDF0252728442B5F00C4F49D /* README.md */,
 			);
 			path = RandDistAlgosVisualizer;
 			sourceTree = "<group>";
