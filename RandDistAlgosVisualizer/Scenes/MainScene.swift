@@ -42,21 +42,28 @@ struct MainScene {
         scene.rootNode.addChildNode(directionalNode)
     }
 
-    func createPointField(position: SCNVector3) {
-//        var randomGenerator = RandomPointGenerator()
-//        let points = randomGenerator.generatePoints(numPoints: 130, maxWidth: 4.0, maxLength: 4.0)
+    func createPointField(position: SCNVector3, algorithm: AlgorithmOptions, trees: Bool) {
+        var generator: PointGenerator = RandomPointGenerator()
 
-//        var mitchellGenerator = MitchellPointGenerator()
-//        let points = mitchellGenerator.generatePoints(numPoints: 130, maxWidth: 0.0, maxLength: 0.0)
+        switch algorithm {
+        case .simple:
+            break
+        case .mitchell:
+            generator = MitchellPointGenerator()
+        case .sunflower:
+            generator = SunflowerPointGenerator()
+        case .vogel:
+            generator = VogelPointGenerator()
+        }
 
-//        var sunflowerGenerator = SunflowerPointGenerator()
-//        let points = sunflowerGenerator.generatePoints(numPoints: 230, maxWidth: 0.0, maxLength: 0.0)
-
-        var vogelGenerator = VogelPointGenerator()
-        let points = vogelGenerator.generatePoints(numPoints: 230, maxWidth: 0.0, maxLength: 0.0)
-
-        let visualizer = Visualizer(with: points)
+        let points = generator.generatePoints(numPoints: 130, maxWidth: 4.0, maxLength: 4.0)
+        let visualizer = Visualizer(with: points, trees: trees)
+        visualizer.name = "visualizer"
         scene?.rootNode.addChildNode(visualizer)
         visualizer.position = position
+    }
+
+    func resetPointField() {
+        scene?.rootNode.childNodes.filter({ $0.name == "visualizer" }).forEach({ $0.removeFromParentNode() })
     }
 }

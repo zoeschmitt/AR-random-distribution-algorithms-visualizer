@@ -11,14 +11,13 @@ import SceneKit
 /// the container that holds the objects that we’ll place in the world to visualize the point set.
 class Visualizer: SCNNode {
     let controlNode = SCNNode()
-    let forest: Bool = true
 
-    init(with points: [CGPoint]) {
+    init(with points: [CGPoint], trees: Bool) {
         super.init()
 
         self.addChildNode(controlNode)
 
-        if forest {
+        if trees {
             points.forEach({ (point) in
                 createForest(point: point)
             })

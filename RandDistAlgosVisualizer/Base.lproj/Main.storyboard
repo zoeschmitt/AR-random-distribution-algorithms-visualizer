@@ -19,6 +19,21 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m68-8W-V4E">
+                                <rect key="frame" x="290" y="60" width="94" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Algorithms"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pvl-G1-aTS">
+                                <rect key="frame" x="30" y="60" width="141" height="32"/>
+                                <segments>
+                                    <segment title="Spheres"/>
+                                    <segment title="Trees"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlChanged:" destination="BV1-FR-VrT" eventType="valueChanged" id="aPI-su-P3i"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -26,11 +41,19 @@
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="4gW-eu-aoq"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="FqN-LW-yjm"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="QnW-G7-X8o"/>
+                            <constraint firstItem="Pvl-G1-aTS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="30" id="WNf-Li-jOo"/>
+                            <constraint firstItem="m68-8W-V4E" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fQZ-KI-GVf" secondAttribute="leading" symbolic="YES" id="Wiv-yB-K5D"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="m68-8W-V4E" secondAttribute="trailing" constant="30" id="hXc-nk-E6c"/>
+                            <constraint firstItem="m68-8W-V4E" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" constant="16" id="jst-eC-5zb"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="qMU-MR-tL3"/>
+                            <constraint firstItem="m68-8W-V4E" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pvl-G1-aTS" secondAttribute="trailing" constant="8" symbolic="YES" id="xAi-P8-bJu"/>
+                            <constraint firstItem="Pvl-G1-aTS" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" constant="16" id="z2O-Zh-e4t"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="algorithmsButton" destination="m68-8W-V4E" id="zgG-mx-9TI"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="sphereOrTreeControl" destination="Pvl-G1-aTS" id="Wwv-Ly-lKH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
