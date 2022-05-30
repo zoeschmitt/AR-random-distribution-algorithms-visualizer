@@ -23,6 +23,9 @@
 		DDF0253428443D6B00C4F49D /* SimpleRandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0253328443D6B00C4F49D /* SimpleRandomGenerator.swift */; };
 		DDF0253A2844500F00C4F49D /* SunflowerPointGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF025392844500F00C4F49D /* SunflowerPointGenerator.swift */; };
 		DDF0253C2844569D00C4F49D /* VogelPointGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0253B2844569D00C4F49D /* VogelPointGenerator.swift */; };
+		DDF0254228445B5200C4F49D /* SceneObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0254128445B5200C4F49D /* SceneObject.swift */; };
+		DDF0254428445B6600C4F49D /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0254328445B6600C4F49D /* Tree.swift */; };
+		DDF0254628445F8000C4F49D /* Tree.dae in Resources */ = {isa = PBXBuildFile; fileRef = DDF0254528445F8000C4F49D /* Tree.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		DDF0253328443D6B00C4F49D /* SimpleRandomGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRandomGenerator.swift; sourceTree = "<group>"; };
 		DDF025392844500F00C4F49D /* SunflowerPointGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunflowerPointGenerator.swift; sourceTree = "<group>"; };
 		DDF0253B2844569D00C4F49D /* VogelPointGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VogelPointGenerator.swift; sourceTree = "<group>"; };
+		DDF0254128445B5200C4F49D /* SceneObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneObject.swift; sourceTree = "<group>"; };
+		DDF0254328445B6600C4F49D /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		DDF0254528445F8000C4F49D /* Tree.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Tree.dae; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,8 @@
 		DDF02509284429C300C4F49D /* RandDistAlgosVisualizer */ = {
 			isa = PBXGroup;
 			children = (
+				DDF0254028445AEE00C4F49D /* Objects */,
+				DDF0253D28445AA900C4F49D /* Models */,
 				DDF0252D284432E800C4F49D /* Visualization */,
 				DDF0252428442A9600C4F49D /* Utils */,
 				DDF0251E284429EA00C4F49D /* Scenes */,
@@ -125,6 +133,23 @@
 				DDF0253B2844569D00C4F49D /* VogelPointGenerator.swift */,
 			);
 			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		DDF0253D28445AA900C4F49D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0254528445F8000C4F49D /* Tree.dae */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDF0254028445AEE00C4F49D /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0254128445B5200C4F49D /* SceneObject.swift */,
+				DDF0254328445B6600C4F49D /* Tree.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +214,7 @@
 				DDF0250D284429C300C4F49D /* art.scnassets in Resources */,
 				DDF02517284429C400C4F49D /* LaunchScreen.storyboard in Resources */,
 				DDF02514284429C400C4F49D /* Assets.xcassets in Resources */,
+				DDF0254628445F8000C4F49D /* Tree.dae in Resources */,
 				DDF02512284429C300C4F49D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDF0252F284432FE00C4F49D /* Visualizer.swift in Sources */,
+				DDF0254228445B5200C4F49D /* SceneObject.swift in Sources */,
 				DDF0252328442A6500C4F49D /* MainScene.swift in Sources */,
 				DDF0253228443C2A00C4F49D /* MitchellPointGenerator.swift in Sources */,
 				DDF0253C2844569D00C4F49D /* VogelPointGenerator.swift in Sources */,
@@ -210,6 +237,7 @@
 				DDF0253A2844500F00C4F49D /* SunflowerPointGenerator.swift in Sources */,
 				DDF0252A28442F0F00C4F49D /* PointGenerator.swift in Sources */,
 				DDF0250F284429C300C4F49D /* ViewController.swift in Sources */,
+				DDF0254428445B6600C4F49D /* Tree.swift in Sources */,
 				DDF0250B284429C300C4F49D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
