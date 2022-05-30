@@ -110,10 +110,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
 
     // MARK: - IBActions
-    //
-    //    @IBAction func algorithmsButtonTapped(_ sender: UIButton) {
-    //
-    //    }
     
     @IBAction func segmentedControlChanged(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
