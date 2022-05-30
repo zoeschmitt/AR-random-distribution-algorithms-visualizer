@@ -1,3 +1,5 @@
 # AR Random Distribution Algorithms Visualizer
 
-Random distribution algorithms visualizer using augmented reality made with ARKit.
+Modeling random distribution algorithms visualizer using augmented reality made with ARKit.
+
+[Algorithms](https://bost.ocks.org/mike/algorithms/)

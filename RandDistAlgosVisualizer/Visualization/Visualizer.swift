@@ -17,7 +17,7 @@ class Visualizer: SCNNode {
 
         self.addChildNode(controlNode)
         points.forEach({ (point) in
-            let sphere = self.createSphere(size: 0.03)
+            let sphere = self.createSphere(size: 0.01)
             sphere.position = SCNVector3(Float(point.x), 0, Float(point.y))
             controlNode.addChildNode(sphere)
         })

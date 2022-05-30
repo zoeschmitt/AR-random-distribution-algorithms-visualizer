@@ -43,9 +43,12 @@ struct MainScene {
     }
 
     func createPointField(position: SCNVector3) {
-        var randomGenerator = RandomPointGenerator()
-        let points = randomGenerator.generatePoints(numPoints: 130, maxWidth: 4.0, maxLength: 4.0)
+//        var randomGenerator = RandomPointGenerator()
+//        let points = randomGenerator.generatePoints(numPoints: 130, maxWidth: 4.0, maxLength: 4.0)
 
+        var mitchellGenerator = MitchellPointGenerator()
+        let points = mitchellGenerator.generatePoints(numPoints: 130, maxWidth: 0.4, maxLength: 0.4)
+        
         let visualizer = Visualizer(with: points)
         scene?.rootNode.addChildNode(visualizer)
         visualizer.position = position

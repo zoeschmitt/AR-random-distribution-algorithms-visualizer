@@ -19,6 +19,8 @@
 		DDF0252A28442F0F00C4F49D /* PointGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0252928442F0F00C4F49D /* PointGenerator.swift */; };
 		DDF0252C284430D300C4F49D /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0252B284430D300C4F49D /* UtilityExtensions.swift */; };
 		DDF0252F284432FE00C4F49D /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0252E284432FE00C4F49D /* Visualizer.swift */; };
+		DDF0253228443C2A00C4F49D /* MitchellPointGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0253128443C2A00C4F49D /* MitchellPointGenerator.swift */; };
+		DDF0253428443D6B00C4F49D /* SimpleRandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0253328443D6B00C4F49D /* SimpleRandomGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		DDF0252928442F0F00C4F49D /* PointGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointGenerator.swift; sourceTree = "<group>"; };
 		DDF0252B284430D300C4F49D /* UtilityExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityExtensions.swift; sourceTree = "<group>"; };
 		DDF0252E284432FE00C4F49D /* Visualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visualizer.swift; sourceTree = "<group>"; };
+		DDF0253128443C2A00C4F49D /* MitchellPointGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitchellPointGenerator.swift; sourceTree = "<group>"; };
+		DDF0253328443D6B00C4F49D /* SimpleRandomGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRandomGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,20 @@
 		DDF0252D284432E800C4F49D /* Visualization */ = {
 			isa = PBXGroup;
 			children = (
+				DDF0253028443C1A00C4F49D /* Algorithms */,
 				DDF0252928442F0F00C4F49D /* PointGenerator.swift */,
 				DDF0252E284432FE00C4F49D /* Visualizer.swift */,
 			);
 			path = Visualization;
+			sourceTree = "<group>";
+		};
+		DDF0253028443C1A00C4F49D /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0253128443C2A00C4F49D /* MitchellPointGenerator.swift */,
+				DDF0253328443D6B00C4F49D /* SimpleRandomGenerator.swift */,
+			);
+			path = Algorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,8 +196,10 @@
 			files = (
 				DDF0252F284432FE00C4F49D /* Visualizer.swift in Sources */,
 				DDF0252328442A6500C4F49D /* MainScene.swift in Sources */,
+				DDF0253228443C2A00C4F49D /* MitchellPointGenerator.swift in Sources */,
 				DDF0252628442AA700C4F49D /* Node+Extensions.swift in Sources */,
 				DDF0252C284430D300C4F49D /* UtilityExtensions.swift in Sources */,
+				DDF0253428443D6B00C4F49D /* SimpleRandomGenerator.swift in Sources */,
 				DDF0252A28442F0F00C4F49D /* PointGenerator.swift in Sources */,
 				DDF0250F284429C300C4F49D /* ViewController.swift in Sources */,
 				DDF0250B284429C300C4F49D /* AppDelegate.swift in Sources */,
