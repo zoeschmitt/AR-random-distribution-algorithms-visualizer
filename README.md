@@ -6,3 +6,7 @@ Modeling random distribution algorithms visualizer using augmented reality made 
 - [Sunflower Seed Algorithm](https://thatsmaths.com/2014/06/05/sunflowers-and-fibonacci-models-of-efficiency/)
 - [Sunflower Seed Algorithm 2](https://www.popmath.org.uk/rpamaths/rpampages/sunflower.html)
 - [Vogel Spiral](https://www.codeproject.com/Articles/1221341/The-Vogel-Spiral-Phenomenon)
+
+---------------  
+
+![Demo](algos_gif.gif)
