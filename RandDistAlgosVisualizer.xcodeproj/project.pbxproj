@@ -21,6 +21,8 @@
 		DDF0252F284432FE00C4F49D /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0252E284432FE00C4F49D /* Visualizer.swift */; };
 		DDF0253228443C2A00C4F49D /* MitchellPointGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0253128443C2A00C4F49D /* MitchellPointGenerator.swift */; };
 		DDF0253428443D6B00C4F49D /* SimpleRandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0253328443D6B00C4F49D /* SimpleRandomGenerator.swift */; };
+		DDF0253A2844500F00C4F49D /* SunflowerPointGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF025392844500F00C4F49D /* SunflowerPointGenerator.swift */; };
+		DDF0253C2844569D00C4F49D /* VogelPointGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0253B2844569D00C4F49D /* VogelPointGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		DDF0252E284432FE00C4F49D /* Visualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visualizer.swift; sourceTree = "<group>"; };
 		DDF0253128443C2A00C4F49D /* MitchellPointGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitchellPointGenerator.swift; sourceTree = "<group>"; };
 		DDF0253328443D6B00C4F49D /* SimpleRandomGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRandomGenerator.swift; sourceTree = "<group>"; };
+		DDF025392844500F00C4F49D /* SunflowerPointGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunflowerPointGenerator.swift; sourceTree = "<group>"; };
+		DDF0253B2844569D00C4F49D /* VogelPointGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VogelPointGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 			children = (
 				DDF0253128443C2A00C4F49D /* MitchellPointGenerator.swift */,
 				DDF0253328443D6B00C4F49D /* SimpleRandomGenerator.swift */,
+				DDF025392844500F00C4F49D /* SunflowerPointGenerator.swift */,
+				DDF0253B2844569D00C4F49D /* VogelPointGenerator.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -197,9 +203,11 @@
 				DDF0252F284432FE00C4F49D /* Visualizer.swift in Sources */,
 				DDF0252328442A6500C4F49D /* MainScene.swift in Sources */,
 				DDF0253228443C2A00C4F49D /* MitchellPointGenerator.swift in Sources */,
+				DDF0253C2844569D00C4F49D /* VogelPointGenerator.swift in Sources */,
 				DDF0252628442AA700C4F49D /* Node+Extensions.swift in Sources */,
 				DDF0252C284430D300C4F49D /* UtilityExtensions.swift in Sources */,
 				DDF0253428443D6B00C4F49D /* SimpleRandomGenerator.swift in Sources */,
+				DDF0253A2844500F00C4F49D /* SunflowerPointGenerator.swift in Sources */,
 				DDF0252A28442F0F00C4F49D /* PointGenerator.swift in Sources */,
 				DDF0250F284429C300C4F49D /* ViewController.swift in Sources */,
 				DDF0250B284429C300C4F49D /* AppDelegate.swift in Sources */,

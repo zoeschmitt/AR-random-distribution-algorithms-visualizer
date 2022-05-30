@@ -67,7 +67,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 let tapLocation = recognizer.location(in: sceneView)
                 let hitTestResults = sceneView.hitTest(tapLocation)
                 var translation = matrix_identity_float4x4
-                translation.columns.3.z = -0.5
+                translation.columns.3.z = -1.0
                 let transform = camera.transform * translation
                 let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
                 sceneController.createPointField(position: position)
